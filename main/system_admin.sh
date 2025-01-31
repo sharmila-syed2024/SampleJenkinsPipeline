@@ -8,7 +8,7 @@ function system_info {
     echo "Operating System and Version:"
     lsb_release -a 2>/dev/null || cat /etc/os-release
     echo "System Uptime: $(uptime -p)"
-    echo "Current User: $(whoami)"
+    echo "Current User : $(whoami)"
     echo
 }
 # Function: File and Directory Management
