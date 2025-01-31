@@ -3,7 +3,7 @@ echo "hello azure batch"
 
 echo "==================================="
 echo "Linux Batch Scripting: Assignment 1"
-echo "=================================="
+echo "+=================================="
 
 # -------------------------------
 # System Information
