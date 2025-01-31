@@ -1,0 +1,31 @@
+pipeline {
+    agent any
+    stages {
+        stage('Checkout') {
+            steps {
+                git url: "https://github.com/sharmila-syed2024/SampleJenkinsPipeline.git",branch: 'main'
+            }
+        }
+        stage('Build') {
+            steps {
+                echo "Building branch"
+            }
+        }
+        stage('Test') {
+            steps {
+                echo "Running tests on"
+            }
+        }
+        stage('Deploy') {
+            steps {
+                echo "Deploying branch"
+            }
+        }
+        stage('Running Script') {
+            steps {
+                sh 'chmod +x system_admin.sh'
+                sh './system_admin.sh'
+            }
+        }
+    }
+}
